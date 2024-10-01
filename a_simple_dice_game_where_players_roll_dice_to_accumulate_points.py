@@ -21,4 +21,6 @@ while True:
         print("Please try again.")
 
 maximum_score = 100
-player_scores = [0 for i in range(players)]    
+player_scores = [0 for every_single_player in range(players)]    
+
+
