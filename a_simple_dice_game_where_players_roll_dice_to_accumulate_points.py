@@ -21,6 +21,15 @@ while True:
         print("Please try again.")
 
 maximum_score = 100
-player_scores = [0 for every_single_player in range(players)]    
+player_scores = [0 for every_single_player in range(players)]  
 
+while max(player_scores) < maximum_score:
+    for player_index in range(players):
+        print(f"Player {player_index + 1}, your turn has just started.")
+        print(f"Total score: {player_scores[player_index]} point/s")
 
+        while True:
+            print("Would you like to roll? (Press 'R' if you would like to roll. Otherwise, press any 'Key' to pass.)")
+            would_roll = input()
+            if would_roll != "R":
+                break
