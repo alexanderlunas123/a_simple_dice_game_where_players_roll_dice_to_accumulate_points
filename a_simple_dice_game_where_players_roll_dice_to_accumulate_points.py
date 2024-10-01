@@ -1,3 +1,8 @@
+import pyfiglet
+
+title = pyfiglet.figlet_format("\nPIG (Dice Game)", font="slant")
+print(title)
+
 import random
 
 def roll_dice():
@@ -8,7 +13,7 @@ def roll_dice():
     return rolling_dice
 
 while True:
-    players = input("Enter the number of players (2-4): ")
+    players = input("\nEnter the number of players (2-4): ")
     if players.isdigit():
         players = int(players)
         if 2 <= players <= 4:
@@ -25,8 +30,8 @@ player_scores = [0 for every_single_player in range(players)]
 
 while max(player_scores) < maximum_score:
     for player_index in range(players):
-        print(f"Player {player_index + 1}, your turn has just started.")
-        print(f"Total score: {player_scores[player_index]} point/s")
+        print(f"\nPlayer {player_index + 1}, your turn has just started.")
+        print(f"Total score: {player_scores[player_index]} point/s\n")
         current_score = 0
 
         while True:
@@ -52,4 +57,4 @@ while max(player_scores) < maximum_score:
 
 maximum_score = max(player_scores)        
 winning_player_index = player_scores.index(maximum_score)
-print(f"Player {winning_player_index + 1} is the 🏆WINNER🏆 with a total score of: {maximum_score} points")        
+print(f"\nPlayer {winning_player_index + 1} is the 🏆WINNER🏆 with a total score of: {maximum_score} points")        
