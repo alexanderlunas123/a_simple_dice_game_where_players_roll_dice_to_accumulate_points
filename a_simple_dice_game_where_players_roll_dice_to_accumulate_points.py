@@ -20,6 +20,5 @@ while True:
         print("Invalid input, must be a digit.")
         print("Please try again.")
 
+maximum_score = 100
 player_scores = [0 for i in range(players)]    
-
-print(player_scores)
