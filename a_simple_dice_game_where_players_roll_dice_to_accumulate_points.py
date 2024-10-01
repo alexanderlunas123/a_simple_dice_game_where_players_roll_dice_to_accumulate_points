@@ -34,3 +34,9 @@ while max(player_scores) < maximum_score:
             would_roll = input()
             if would_roll.upper() != "R":
                 break
+
+            rolled_value = roll_dice()
+            if rolled_value == 1:
+                print("You rolled a 1, turn done.")
+                current_score = 0
+                break
