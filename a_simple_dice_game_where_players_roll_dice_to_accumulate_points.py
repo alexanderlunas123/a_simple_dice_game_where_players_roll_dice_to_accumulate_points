@@ -9,8 +9,13 @@ def roll_dice():
 
 while True:
     players = input("Enter the number of players (2-4): ")
-    players = int(players)
-    if 2 <= players <= 4:
-        break
+    if players.isdigit():
+        players = int(players)
+        if 2 <= players <= 4:
+             break
+        else: 
+            print("Invalid input, must be between 2-4 players.")
+            print("Please try again.")
     else:
-        print("Invalid input, please try again.")
+        print("Invalid input, must be a digit.")
+        print("Please try again.")
