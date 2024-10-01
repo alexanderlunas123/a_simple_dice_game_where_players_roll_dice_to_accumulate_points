@@ -19,3 +19,7 @@ while True:
     else:
         print("Invalid input, must be a digit.")
         print("Please try again.")
+
+player_scores = [0 for i in range(players)]    
+
+print(player_scores)
