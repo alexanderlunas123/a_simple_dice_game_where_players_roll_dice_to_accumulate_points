@@ -40,3 +40,12 @@ while max(player_scores) < maximum_score:
                 print("You rolled a 1, turn done.")
                 current_score = 0
                 break
+      
+            else:
+                current_score += rolled_value
+                print(f"You rolled a {rolled_value}.")
+
+            print(f"Current score: {current_score} point/s")    
+
+        player_scores[player_index] += current_score
+        print(f"Total score: {player_scores[player_index]} point/s")
