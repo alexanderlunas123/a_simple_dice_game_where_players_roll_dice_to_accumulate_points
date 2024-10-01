@@ -6,3 +6,10 @@ def roll_dice():
     rolling_dice = random.randint(minimum_value, maximum_value)
 
     return rolling_dice
+
+while True:
+    players = input("Enter the number of players (2-4): ")
+    if 2 <= players <= 4:
+        break
+    else:
+        print("Invalid input, please try again.")
