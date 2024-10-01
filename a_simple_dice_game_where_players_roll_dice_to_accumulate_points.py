@@ -9,6 +9,7 @@ def roll_dice():
 
 while True:
     players = input("Enter the number of players (2-4): ")
+    players = int(players)
     if 2 <= players <= 4:
         break
     else:
