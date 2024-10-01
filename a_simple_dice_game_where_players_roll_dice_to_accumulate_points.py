@@ -27,6 +27,7 @@ while max(player_scores) < maximum_score:
     for player_index in range(players):
         print(f"Player {player_index + 1}, your turn has just started.")
         print(f"Total score: {player_scores[player_index]} point/s")
+        current_score = 0
 
         while True:
             print("Would you like to roll? (Press 'R' if you would like to roll. Otherwise, press any 'Key' to pass.)")
