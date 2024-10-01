@@ -31,5 +31,5 @@ while max(player_scores) < maximum_score:
         while True:
             print("Would you like to roll? (Press 'R' if you would like to roll. Otherwise, press any 'Key' to pass.)")
             would_roll = input()
-            if would_roll != "R":
+            if would_roll.upper() != "R":
                 break
