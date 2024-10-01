@@ -49,3 +49,7 @@ while max(player_scores) < maximum_score:
 
         player_scores[player_index] += current_score
         print(f"Total score: {player_scores[player_index]} point/s")
+
+maximum_score = max(player_scores)        
+winning_player_index = player_scores.index(maximum_score)
+print(f"Player {winning_player_index + 1} is the 🏆WINNER🏆 with a total score of: {maximum_score} points")        
